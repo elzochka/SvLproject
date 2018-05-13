@@ -1,0 +1,9 @@
+[0;1;32m●[0m mysql.service - MySQL Community Server
+   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since чт 2018-05-10 08:21:06 EEST; 4h 58min ago
+ Main PID: 1004 (mysqld)
+   CGroup: /system.slice/mysql.service
+           └─1004 /usr/sbin/mysqld
+
+тра 10 08:20:36 kotzilla-MS-7A12 systemd[1]: Starting MySQL Community Server...
+тра 10 08:21:06 kotzilla-MS-7A12 systemd[1]: Started MySQL Community Server.
