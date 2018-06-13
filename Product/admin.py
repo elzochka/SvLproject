@@ -1,5 +1,14 @@
 from django.contrib import admin
-from .models import Product
+from .models import Product, Image
 
-# Register your models here.
-admin.site.register(Product)
+
+class ImageAdmin(admin.StackedInline):
+    model = Image
+
+
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ["name", "details", "about_brand", "sizing", "shipping"]
+    inlines = [ImageAdmin]
+
+
+admin.site.register(Product, ProductAdmin)

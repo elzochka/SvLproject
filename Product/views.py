@@ -7,3 +7,4 @@ def single_product(request):
 
 def base_page(request):
     return render(request, "base.html")
+
